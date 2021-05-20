@@ -1,13 +1,91 @@
-// Graphical variables
+
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
 
-// External libraries
+
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Your CSS partials
+
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #cbcdee;
+}
+
+.cards-container{
+  display: flex;
+}
+
+.cards{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.pet_tag {
+  position: relative;
+  top: 0%;
+  right: 0%;
+}
+.food-photo-show {
+  position: relative;
+  border-radius: 10px;
+  .food-name-show{
+    position: absolute;
+    color: white;
+    background: gray;
+    margin: 6px;
+  }
+}
+.button-home {
+  font-size: 45px;
+  border-radius: 30px;
+  
+}
+
+
+.product_board {
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 10px grey;
+}
+.display-4 {
+  color:rgb(16, 31, 65);
+}
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+  font-size: 20px;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}

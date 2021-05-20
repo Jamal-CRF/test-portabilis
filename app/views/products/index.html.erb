@@ -1,0 +1,14 @@
+<h1 class="display-4 text-center mt-4"> Confira nossos produtos</h1>
+  <div class="product_board">
+    <div class="cards-container">
+  <div class="cards">
+    <% @products.each do |product| %>
+        <% if product.photo.attached? %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path product.photo.key, height: 300, width: 400, gravity: :auto, crop: :fill %>')">
+            <%= link_to product.title.capitalize, product_path(product), class: "btn btn-success pet_tag" %>
+          </div>
+        <% end %>
+    <% end %>
+  </div>
+</div>
+</div>
