@@ -51,10 +51,11 @@ body {
 .food-photo-show {
   position: relative;
   border-radius: 10px;
+  background: rgb(214, 219, 255);
   .food-name-show{
-    position: absolute;
-    color: white;
-    background: gray;
+    
+    color: rgb(80, 80, 80);
+    background: rgb(193, 211, 226);
     margin: 6px;
   }
 }

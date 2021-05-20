@@ -5,7 +5,7 @@
       <div style="padding-bottom: 40px;">
         <div class="row">
           <div class="col-lg-8 col-md-8 food-photo-show">
-          <h1 class="food-name-show"> <strong><%= @product.title %></strong> </h1>
+          <h1 class="food-name-show text-center mb-3"> <strong><%= @product.title %></strong> </h1>
             <%= cl_image_tag @product.photo.key, height: 600, width: 700, gravity: :auto, crop: :fill, class: "animal-photo" %>
           </div>
 
